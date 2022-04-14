@@ -1,0 +1,110 @@
+const greet = function() {
+  console.log("Halo!");
+  console.log("Ayo belajar function!");
+};
+
+// Panggil function greet dibawah
+greet(); // MEMPELAJARI FUNCTION 1
+
+// Tetapkan function ke constant hello
+const hello = function() {
+  console.log("Halo!");
+  console.log("Saya Ninja Ken");
+};
+
+// Panggil function yang ditetapkan di constant hello
+hello(); // MEMPELAJARI FUNCTION 2
+
+// Tetapkan arrow function ke constant greet
+const greet = () => {
+  console.log("Halo!");
+};
+
+// Panggil function greet
+greet(); // ARROW FUNCTION
+
+// Tambahkan parameter name ke function
+const greet = (name) => {
+  // Print pesan "Halo, ____"
+  console.log(`Halo, ${name}`);
+};
+
+// Panggil function greet dengan "Guru Domba" sebagai argument
+greet("Guru Domba");// ARGUMENT
+
+// Tambahkan parameter number1 dan number2 kedalam function 
+const add = (number1, number2) => {
+  // Print penjumlahaan number1 dan number2
+  console.log(number1 + number2);
+};
+
+// Panggil function dengan 5 dan 7 sebagai argument
+add(5, 7); //MENGGUNAKAN BEBERAPA ARGUMENT
+
+const half = (number) => {
+  // Return nilai dari variable number dibagi 2
+  return number / 2;
+};
+
+// Defenisikan constant result
+const result = half(130);
+
+// Print pesan "Separuh dari 130 adalah ____"
+console.log(`Separuh dari 130 adalah ${result}`); // NILAI RETURN
+
+const check = (number) => {
+  // periksa apakah number adalah kelipatan dari 3 dan return-kan hasilnya
+  return number % 3 === 0;
+};
+
+// Panggil function check dalam kondisi statement if
+if (check(123)) {
+  console.log("Multiple of 3");
+} else {
+  console.log("Not a multiple of 3");
+} // MENGGUNAKAN NILAI RETURN
+
+// Definisikan constant name
+const name = "Ninja Ken";
+
+const introduce = (name) => {
+  // Print "Saya ____" diconsole
+  console.log(`Saya ${name}`);
+};
+
+// Panggil function introduce
+introduce("Guru Domba");
+
+// Print nilai dari constant name
+console.log(name); // SCOPE (CAKUPAN)
+
+const number1 = 103;
+const number2 = 72;
+const number3 = 189;
+
+// Ketik sebuah function getMax untuk mendapatkan nilai maksimum
+const getMax = (a, b, c) => {
+  let max = a;
+  
+  if (b > max) {
+    max = b;
+  }
+  if (c > max) {
+    max = c;
+  }
+  
+  return max;
+};
+
+// Print "Nilai maksimum adalah __"
+const max = getMax(number1, number2, number3);
+console.log(`Nilai maksimum adalah ${max}`); // LATIHAN AKHIR
+
+
+
+
+
+
+
+
+
